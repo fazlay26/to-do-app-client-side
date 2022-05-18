@@ -14,6 +14,7 @@ function App() {
       <Routes>
         <Route path='task' element={<RequireAuth><Task></Task></RequireAuth>}></Route>
         <Route path='login' element={<Login></Login>}></Route>
+        <Route path='/' element={<Login></Login>}></Route>
       </Routes>
 
     </div>

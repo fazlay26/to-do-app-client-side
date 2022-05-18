@@ -14,7 +14,7 @@ const SingleTask = ({ t }) => {
 
         const proceed = window.confirm("are you sure??")
         if (proceed) {
-            const url = `http://localhost:5000/task/${id}`
+            const url = `https://warm-wave-06910.herokuapp.com/task/${id}`
             fetch(url, {
                 method: 'DELETE',
             })

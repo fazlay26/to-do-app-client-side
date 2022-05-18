@@ -7,7 +7,7 @@ import SingleTask from './SingleTask';
 const Task = () => {
     const [task, setTask] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/task')
+        fetch('https://warm-wave-06910.herokuapp.com/task')
             .then(res => res.json())
             .then(data => setTask(data))
     }, [])
@@ -15,7 +15,7 @@ const Task = () => {
 
     const onSubmit = data => {
         console.log(data)
-        fetch('http://localhost:5000/task', {
+        fetch('https://warm-wave-06910.herokuapp.com/task', {
 
             method: 'POST',
             headers: {
